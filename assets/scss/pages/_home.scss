@@ -1,0 +1,297 @@
+#main {
+  // Section Contact
+
+  &-contact {
+    position: relative;
+    background-color: black;
+    .container {
+      padding: 3rem 0;
+      // Contact Number
+
+      .contact-number {
+        display: flex;
+        width: 65%;
+        .contact-cart {
+          display: flex;
+          text-align: left;
+          gap: 1rem;
+          width: 100%;
+          i {
+            font-size: 2rem;
+            color: $primary-color;
+          }
+          h3 {
+            color: #fff;
+          }
+          p {
+            color: $gray-color;
+          }
+        }
+      }
+    }
+    // Contact Form
+
+    .contact-form {
+      background-color: $primary-color;
+      width: 35%;
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 2rem;
+      color: white;
+      padding: 0 2rem;
+      height: 300px;
+      z-index: 1000;
+      div {
+        color: white;
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        .contact-label {
+          padding: 1rem;
+          width: 100%;
+          background-color: $primary-color;
+          border: none;
+          border-bottom: 1px solid #fff;
+          color: white;
+          &::placeholder {
+            color: white;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .contact-btn {
+        border: none;
+        padding: 1rem;
+      }
+    }
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      .container {
+        flex-direction: column;
+        .contact-number {
+          flex-direction: column;
+          width: 100%;
+        }
+      }
+      .contact-form {
+        width: 100%;
+        position: relative;
+        gap: 0;
+        div {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  // Section Story
+
+  &-story {
+    // Story
+
+    .story {
+      display: flex;
+      .story-restaurant {
+        background: url("/assets/img/story-bg-2.webp") no-repeat center;
+        width: 100%;
+        height: 60vh;
+      }
+      .story-bg {
+        background: url("/assets/img/story-bg-1.webp") no-repeat;
+        height: 60vh;
+        width: 100%;
+        position: relative;
+        background-attachment: fixed;
+        .story-bg-cart {
+          padding: 2rem;
+          background-color: rgba(0, 0, 0, 0.7);
+          position: absolute;
+          width: 100%;
+          left: 50%;
+          top: 50%;
+          transform: translate(-70%, -50%);
+          h1 {
+            font-family: "Fuggles";
+            color: $warning-color;
+            font-size: 7rem;
+          }
+          p {
+            color: $gray-color;
+          }
+        }
+      }
+      @media (max-width: 767px) {
+        flex-direction: column;
+        .story-restaurant {
+          height: 55vh;
+        }
+        .story-bg {
+          height: 55vh;
+          .story-bg-cart {
+            left: 0;
+            top: 0;
+            transform: translate(0, 0);
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    // Story Carts
+
+    .story-carts {
+      background-color: $primary-color;
+      .container {
+        gap: 2rem;
+        padding: 5rem 0;
+        .story-cart {
+          text-align: center;
+          width: 70%;
+          i {
+            padding: 2rem;
+            font-size: 4rem;
+            border: 1px solid black;
+          }
+          h3 {
+            margin: 1rem 0;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+        @media (max-width:767px) {
+        flex-direction: column;
+        }
+      }
+    }
+  }
+
+  // Section Menu
+
+  &-menu {
+    background: url('/assets/img/story-bg-1.webp') fixed;
+    padding: 5rem 0;
+    .container {
+      display: flex;
+      gap: 2rem;
+      .menu-text {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        width: 100%;
+        h1 {
+          font-family: "Fuggles";
+          color: $warning-color;
+          font-size: 7rem;
+          text-align: right;
+        }
+        p {
+          color: $gray-color;
+        }
+        .menu-btn {
+          border: 1px solid $primary-color;
+          background: none;
+          color: $primary-color;
+          padding: 1.5rem;
+          &:hover {
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+      }
+      .menu-images {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        .menu-image {
+          height: 30vh;
+        }
+      }
+      @media (max-width:850px) {
+        flex-direction: column;
+        .menu-text {
+          align-items: start;
+          padding: 0 2rem;
+          h1 {
+            text-align: start;
+          }
+        }
+        .menu-images {
+          grid-template-columns: 1fr;
+          padding: 0 2rem;
+          gap: 3rem;
+          .menu-image {
+            height: 20vh;
+          }
+        }
+      }
+    }
+  }
+
+  // Section Customer Details
+
+  &-customer-details {
+    position: relative;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 0;
+      &::before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .customer-details-cart {
+        width: 100%;
+        text-align: center;
+        color: $primary-color;
+        z-index: 1000;
+      .customer-details-icon {
+        position: relative;
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        border: 1px solid $primary-color;
+        transition: 500ms;
+        i {
+          font-size: 3rem;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+        }
+      }
+        h3 {
+          font-size: 3rem;
+          margin: 1rem 0;
+        }
+        p {
+          font-size: 1.6rem;
+        }
+      }
+      @media (max-width:767px) {
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+  }
+
+}

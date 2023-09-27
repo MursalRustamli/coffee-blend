@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {        
+    font-size: 10px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  @media (max-width: 767px) {
+    html {
+      font-size: 8px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    html {
+      font-size: 7px;
+    }
+  }

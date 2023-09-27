@@ -1,0 +1,226 @@
+#header {
+  // Header Nav
+
+  &-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 2rem 0;
+    .container {
+      h1 {
+        color: #fff;
+        text-align: center;
+      }
+      .nav-links {
+        ul {
+          display: flex;
+          li {
+            margin: 1.5rem;
+            i {
+              color: white;
+            }
+            sup {
+              color: black;
+              background-color: #f8b500;
+              padding: 0.1rem 0.4rem;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  // Header Nav
+
+  &-nav-scroll {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 3000;
+    transition: 500ms;
+    background-color: $dark-color;
+    .container {
+      h1 {
+        color: #fff;
+        text-align: center;
+      }
+      .nav-links {
+        ul {
+          display: flex;
+          li {
+            margin: 1.5rem;
+            i {
+              color: white;
+            }
+            sup {
+              color: black;
+              background-color: #f8b500;
+              padding: 0.1rem 0.4rem;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  // Header Nav Tablet
+
+  &-nav-tablet {
+    display: none;
+    background-color: black;
+    padding: 2rem 0;
+    .nav-tablet-container {
+      width: 100%;
+      max-width: 90%;
+      margin: 0 auto;
+      .nav-tablet-links {
+        .nav-tablet-title {
+          h1 {
+            color: #fff;
+          }
+          .nav-btn {
+            border: none;
+            color: gray;
+            background: none;
+            font-size: 2rem;
+          }
+        }
+        .nav-links-tablet {
+          transition: 3ms ease-in-out;
+          height: 0;
+          overflow: hidden;
+          ul {
+            padding: 0;
+            li {
+              margin: 2rem 0;
+              sup {
+                background-color: $primary-color;
+                padding: 0.5rem;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  // Header Nav Tablet Scroll
+
+  &-nav-tablet-scroll {
+    display: none;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    width: 100%;
+    left: 0;
+    padding: 2rem 0;
+    z-index: 3000;
+    transition: 500ms;
+    .nav-tablet-container {
+      width: 100%;
+      max-width: 90%;
+      margin: 0 auto;
+      .nav-tablet-links {
+        .nav-tablet-title {
+          h1 {
+            color: #fff;
+          }
+          .nav-btn-scroll {
+            border: none;
+            color: gray;
+            background: none;
+            font-size: 2rem;
+          }
+        }
+        .nav-links-tablet-scroll {
+          transition: 3ms ease-in-out;
+          height: 0;
+          overflow: hidden;
+          ul {
+            padding: 0;
+            li {
+              margin: 2rem 0;
+              sup {
+                background-color: $warning-color;
+                padding: 0.5rem;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  // Header Carousel
+
+  .carousel-item {
+    height: 90vh;
+    position: relative;
+    .carousel-cart {
+      background: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      flex-direction: column;
+      // z-index: 1000;
+      h3 {
+        font-size: 5rem;
+        font-family: "Fuggles";
+        font-weight: 700;
+      }
+      h2 {
+        font-size: 5rem;
+        text-align: center;
+        color: #fff;
+      }
+      p {
+        font-size: 1.5rem;
+        text-align: center;
+        color: #fff;
+      }
+      .carousel-cart-order {
+        border: none;
+        background-color: $primary-color;
+        color: black;
+        cursor: pointer;
+        padding: 1rem 2rem;
+        &:hover {
+          background: transparent;
+          color: $primary-color;
+          border: 1px solid $primary-color;
+        }
+      }
+      .carousel-cart-view {
+        border: 1px solid white;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        padding: 1rem 2rem;
+        &:hover {
+          background: $primary-color;
+          color: black;
+          border: none;
+        }
+      }
+    }
+  }
+}

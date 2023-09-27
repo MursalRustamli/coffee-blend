@@ -1,0 +1,32 @@
+$primary-color:#c49b63;
+$dark-color:#151111;
+$gray-color:#808080;
+$warning-color:#f8b500;
+$max-width:90%;
+
+.container {
+    max-width: $max-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.d-flex-content-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex-content-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active {
+    color: #f8b500;
+}
+
+.open {
+    height: auto !important ;
+    transition: 300ms ease-in-out;
+}
