@@ -48,7 +48,7 @@ window.onscroll = function () {
 
 // Customer Details Number Animation
 
-let duration = 6000;
+let duration = 7000;
 
 // Value Coffe
 
